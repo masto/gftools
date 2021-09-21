@@ -1,0 +1,21 @@
+<style>
+a.bookmarklet,
+a.button {
+  display: -moz-inline-box;
+  display: inline-block;
+  padding: 1px 6px;
+  margin-right: 6px;
+  height: 18px;
+  color: #fff;
+  background: #32a0eb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+</style>
+
+<p>Drag these buttons into your bookmarks bar:</p>
+
+<a class="bookmarklet" href="javascript:(function(){ var style = document.createElement(%27style%27), styleContent = document.createTextNode(%27#app .rendered { background: white !important; } #app #background { display: none !important; }%27); style.appendChild(styleContent ); var caput = document.getElementsByTagName(%27head%27); caput[0].appendChild(style); })();">GFBGGone</a>
+<a class="bookmarklet" href="javascript:(function(){ var style = document.createElement(%27style%27), styleContent = document.createTextNode(%27#app .rendered { background: none !important; } #app #background { display: block !important; }%27); style.appendChild(styleContent ); var caput = document.getElementsByTagName(%27head%27); caput[0].appendChild(style); })();">GFBGReturn</a>
